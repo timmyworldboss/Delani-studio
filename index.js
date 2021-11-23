@@ -1,65 +1,87 @@
-
-$(document).ready(function(){
-    $(".road").hide();
-  $(".croseover").hover(function(){
-      $(this).find(".road").toggle(400);
-  });
-  
-  });
-  $(".click0").click(function(){
-      $(".hide0").slideToggle(1000);
-      $(".show0").slideToggle(1200);
+$(document).ready(function () {
+    $("#des,#design").click(function () {
+        $(".hide0").toggle();
+        $("#design").toggle();
     });
-  
-    $(".click1").click(function(){
-      $(".hide1").slideToggle(1000);
-      $(".show1").slideToggle(1200);
+    $("#dev,#development").click(function () {
+        $(".hide1").toggle();
+        $("#development").toggle();
     });
-  
-    $(".click2").click(function(){
-      $(".hide2").slideToggle(1000);
-      $(".show2").slideToggle(1200);
+    $("#prod,#product").click(function () {
+        $(".hide2").toggle();
+        $("#product").toggle();
     });
-  
-    $("button").click(function(party) {
-         var client = document.getElementById('nameDetail').value;
-         alert('Thanks ' + ' we have received your message successful. ' + '!');
-         party.preventDefault();
-     });
-    //  *************RESET FORM*****************
-     $("button").on('click', function(){
-       $('form').each(function(){
-         this.reset();
-       });
-   });
-   const express = require('express');
-const session = require('express-session');
-const compression = require('compression');
-const RedisStore = require('connect-redis')(session);
-const { errorHandler } = require('./utils/error-handler');
+    $("#row1").hover(function () {
+        $(".portfolio1").css({"opacity": "0.2", "transition": "2s"});
+        $("#text1").show();
 
-module.exports = (app, config) => {
-  
-  app.use(compression());
-  app.set('views', 'app/views');
-  app.set('view engine', 'ejs');
-  app.use(express.static('public'));
-  app.use(express.static(__dirname + '/public', {
-      index: false,
-      extensions: ['ejs', 'html']
-  }));
+    }, function () {
+        $(".portfolio1").css("opacity", "1");
+        $("#text1").hide();
+    });
+    $("#row2").hover(function () {
+        $(".portfolio2").css({"opacity": "0.2", "transition": "2s"});
+        $("#text2").show();
 
-  app.use(session({
-    store: new RedisStore({
-      host: config.redis.host,
-      port: config.redis.port,
-      ttl: config.redis.ttl,
-      db: config.redis.db
-    }),
-    secret: config.redis.secret,
-    resave: false,
-    saveUninitialized: true
-  }));
-  require('./routes')(app, config);
-  app.use(errorHandler)
+    }, function () {
+        $(".portfolio2").css("opacity", "1");
+        $("#text2").hide();
+    });
+    $("#row3").hover(function () {
+        $(".portfolio3").css({"opacity": "0.2", "transition": "2s"});
+        $("#text3").show();
+
+    }, function () {
+        $(".portfolio3").css("opacity", "1");
+        $("#text3").hide();
+    });
+    $("#row4").hover(function () {
+        $(".portfolio4").css({"opacity": "0.2", "transition": "2s"});
+        $("#text4").show();
+
+    }, function () {
+        $(".portfolio4").css("opacity", "1");
+        $("#text4").hide();
+    });
+    $("#row5").hover(function () {
+        $(".portfolio5").css({"opacity": "0.2", "transition": "2s"});
+        $("#text5").show();
+
+    }, function () {
+        $(".portfolio5").css("opacity", "1");
+        $("#text5").hide();
+    });
+    $("#row6").hover(function () {
+        $(".portfolio6").css({"opacity": "0.2", "transition": "2s"});
+        $("#text6").show();
+
+    }, function () {
+        $(".portfolio6").css("opacity", "1");
+        $("#text6").hide();
+    });
+    $("#row7").hover(function () {
+        $(".portfolio7").css({"opacity": "0.2", "transition": "2s"});
+        $("#text7").show();
+
+    }, function () {
+        $(".portfolio7").css("opacity", "1");
+        $("#text7").hide();
+    });
+    $("#row8").hover(function () {
+        $(".portfolio8").css({"opacity": "0.2", "transition": "s"});
+        $("#text8").show();
+
+    }, function () {
+        $(".portfolio8").css("opacity", "1");
+        $("#text8").hide();
+    });
+
+});
+var submission = function () {
+    var email = document.getElementById("email")
+    if (email == "") {
+        alert("")
+    } else {
+        alert(' Your message has been received. Thank you for reaching out to us.')
+    }
 }
