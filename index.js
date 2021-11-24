@@ -1,64 +1,89 @@
-$(document).ready(function() {
-    $("#contact form").submit(function(event) {
-      var fullName = $("input#name").val();
-      var email = $("input#mail").val();
-      var text = $("textarea#textarea").val();
-  
-      $(".name").text(fullName);
-      $(".mail").text(email);
-      $(".text").text(text);
-  
-      if (fullName == "" || email == "") {
-        alert("Please fill in all your details");
-      } else if (text == "") {
-        alert("Kindly write a message");
-      } else {
-        alert(
-          fullName +
-            " we have received your message. Thank you for reaching out to us."
-        );
-      }
-      
-      event.preventDefault();
-    });
+
+$(document).ready(function () {
+  $("#des,#design").click(function () {
+      $(".hide0").toggle();
+      $("#design").toggle();
   });
-  
-  $("#design").click(function() {
-    $("#design p").toggle();
-    $("#design img").toggle();
+  $("#dev,#development").click(function () {
+      $(".hide1").toggle();
+      $("#development").toggle();
   });
-  
-  $("#dev").click(function() {
-    $("#dev p").toggle();
-    $("#dev img").toggle();
+  $("#prod,#product").click(function () {
+      $(".hide2").toggle();
+      $("#product").toggle();
   });
-  
-  $("#product").click(function() {
-    $("#product p").toggle();
-    $("#product img").toggle();
+  $("#row1").hover(function () {
+      $(".portfolio1").css({"opacity": "0.2", "transition": "2s"});
+      $("#text1").show();
+
+  }, function () {
+      $(".portfolio1").css("opacity", "1");
+      $("#text1").hide();
   });
-  
-  $(".col-md-3 #w1").hover(function() {
-    $("#c1").toggle();
+  $("#row2").hover(function () {
+      $(".portfolio2").css({"opacity": "0.2", "transition": "2s"});
+      $("#text2").show();
+
+  }, function () {
+      $(".portfolio2").css("opacity", "1");
+      $("#text2").hide();
   });
-  $(".col-md-3 #w2").hover(function() {
-    $("#c2").toggle();
+  $("#row3").hover(function () {
+      $(".portfolio3").css({"opacity": "0.2", "transition": "2s"});
+      $("#text3").show();
+
+  }, function () {
+      $(".portfolio3").css("opacity", "1");
+      $("#text3").hide();
   });
-  $(".col-md-3 #w3").hover(function() {
-    $("#c3").toggle();
+  $("#row4").hover(function () {
+      $(".portfolio4").css({"opacity": "0.2", "transition": "2s"});
+      $("#text4").show();
+
+  }, function () {
+      $(".portfolio4").css("opacity", "1");
+      $("#text4").hide();
   });
-  $(".col-md-3 #w4").hover(function() {
-    $("#c4").toggle();
+  $("#row5").hover(function () {
+      $(".portfolio5").css({"opacity": "0.2", "transition": "2s"});
+      $("#text5").show();
+
+  }, function () {
+      $(".portfolio5").css("opacity", "1");
+      $("#text5").hide();
   });
-  $(".col-md-3 #w5").hover(function() {
-    $("#c5").toggle();
+  $("#row6").hover(function () {
+      $(".portfolio6").css({"opacity": "0.2", "transition": "2s"});
+      $("#text6").show();
+
+  }, function () {
+      $(".portfolio6").css("opacity", "1");
+      $("#text6").hide();
   });
-  $(".col-md-3 #w6").hover(function() {
-    $("#c6").toggle();
+  $("#row7").hover(function () {
+      $(".portfolio7").css({"opacity": "0.2", "transition": "2s"});
+      $("#text7").show();
+
+  }, function () {
+      $(".portfolio7").css("opacity", "1");
+      $("#text7").hide();
   });
-  $(".col-md-3 #w7").hover(function() {
-    $("#c7").toggle();
+  $("#row8").hover(function () {
+      $(".portfolio8").css({"opacity": "0.2", "transition": "s"});
+      $("#text8").show();
+
+  }, function () {
+      $(".portfolio8").css("opacity", "1");
+      $("#text8").hide();
   });
-  $(".col-md-3 #w8").hover(function() {
-    $("#c8").toggle();
-  });
+
+});
+var submission = function () {
+  var email = document.getElementById("email")
+  if (email == "") {
+      alert("")
+  } else {
+      alert(' Your message has been received. Thank you for reaching out to us.')
+  }
+}
+

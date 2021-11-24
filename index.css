@@ -1,198 +1,92 @@
-.header-section {
-    background-image: url("../assets/background/h_img.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center;
-    color: white;
-  }
-  .header-section p {
-    color: white;
-  }
-  #logo {
-    margin-top: 10%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5%;
-  }
-  #mouseclick {
-    margin-top: 6%;
-    margin-bottom: 2%;
-  }
-  #About {
-    text-align: center;
-    margin-top: 4%;
-    margin-bottom: 4%;
-  }
-  #Services {
-    background-image: url("../assets/background/s_image.jpg");
-    background-size: cover;
-    text-align: center;
-    background-position: center;
-    height: auto;
-    width: 98%;
-    margin-bottom: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-  }
-  #Services h2 {
-    margin-top: 7%;
-  }
-  #Services p {
-    margin-bottom: 5%;
-    color: white;
-  }
-  #whatwedo {
-    margin-right: auto;
-    margin-left: auto;
-    image-orientation: center;
-    text-align: center;
-  }
-  
-  #what-we-do {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 2%;
-  }
-  .col-md-4 h4 {
-    margin-top: 3%;
-  }
-  #design {
-    text-align: center;
-  }
-  #dev {
-    text-align: center;
-  }
-  #product {
-    text-align: center;
-  }
-  #dev h5 {
-    margin-top: 7%;
-  }
-  #product {
-    text-align: center;
-  }
-  #design p {
-    display: none;
-  }
-  #dev p {
-    display: none;
-  }
-  #product p {
-    display: none;
-  }
-  #portf {
-    text-align: center;
-    margin-top: 5%;
-  }
-  .col-md-3 img {
-    width: 98%;
-  }
-  #portfoliobottom {
-    margin-top: 2%;
-  }
-  .col-md-3:hover {
-    opacity: 0.5;
-  }
-  .col-md-3 #c1 {
-    display: none;
-    color: orangered;
-  }
-  .col-md-3 #c2 {
-    display: none;
-    color: orangered;
-  }
-  .col-md-3 #c3 {
-    display: none;
-    color: orangered;
-  }
-  .col-md-3 #c4 {
-    display: none;
-    color: orangered;
-  }
-  .col-md-3 #c5 {
-    display: none;
-    color: orangered;
-  }
-  .col-md-3 #c6 {
-    display: none;
-    color: orangered;
-  }
-  .col-md-3 #c7 {
-    display: none;
-    color: orangered;
-  }
-  .col-md-3 #c8 {
-    display: none;
-    color: orangered;
-  }
-  #contact {
-    background-image: url("../assets/background/c_image\ \(1\).jpg");
-    background-size: cover;
-    text-align: center;
-    background-position: center;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  #contactUs {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  form input {
-    width: 36%;
-    background: transparent;
-    border-radius: 50px;
-  }
-  form textarea {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    transition: all 0.4s ease;
-    margin-top: 25px;
-    margin-bottom: 4%;
-    width: 65%;
-  }
-  
-  ::placeholder {
-    color: whitesmoke;
-  }
-  
-  form input:focus,
-  textarea:focus {
-    background: linear-gradient(to right, lightgrey, white);
-    color: black;
-    transform: scale(1);
-    border: transparent;
-  }
-  form input[type="submit"] {
-    color: whitesmoke;
-    background: rgb(224, 163, 82);
-    margin-bottom: 3%;
-    border-radius: 50px;
-    font-size: 1.5em;
-  }
-  form input[type="submit"]:hover {
-    background: silver;
-    border-radius: 35px;
-    outline: none;
-  }
-  
-  #social-media-logos {
-    float: center;
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 30%;
-    margin-left: 30%;
-    color: white;
-  }
-  p {
-    text-align: center;
-    color: black;
-  }
+
+#home{
+  background: url("../assets/backgrounds/h_img.jpg") center center/cover no-repeat;
+  text-align: center;
+  color: white;
+}
+#about{
+  background-color: white;
+  text-align: center;
+}
+#services{
+  background:url("../assets/backgrounds/s_image.jpg") center center/cover no-repeat;
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+h3{
+  text-align: center;
+}
+#contacts{
+  background:url("../assets/backgrounds/c_image.jpg") center center/cover no-repeat;
+  margin-top: 5%;
+  text-align: center
+} 
+#contacts h3{
+  color: white;
+}
+#contacts  textarea{
+  background: none;
+  color: white;
+text-align: center;
+
+} 
+#name{
+  background: none;
+  position: relative;
+  width: 300px;
+}
+#email{
+  position: relative;
+}
+button{
+  margin-top: 20px
+} 
+
+#design,#product,#development{
+  display: none;
+}
+.icons{
+  text-align: center;
+}
+footer{
+  text-align: center;
+}
+.textarea{
+  text-align: center;
+}
+.contacts{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.button{
+  text-align: center;
+}
+
+#top-row, #bottom-row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#arrange {
+  width: 60%;
+  margin: auto;
+}
+#text1 ,#text2, #text3, #text4, #text5, #text6, #text7, #text8{
+  display: none;
+  margin:-50% 25%;
+  padding:2vh 2vh;
+background-color: white;
+text-align:center;
+color:blue;
+}
+::placeholder{
+  color:white;
+}
+.row{
+  margin-top: 10px;
+}
