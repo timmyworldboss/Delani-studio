@@ -1,89 +1,94 @@
-
-$(document).ready(function () {
-  $("#des,#design").click(function () {
-      $(".hide0").toggle();
-      $("#design").toggle();
+$(document).ready(function(){
+    $("form#contact").submit(function(event){
+      var nameInput = $("input#name");
+      var emailInput = $("input#email");
+      event.preventDefault();
+      alert(nameInput +"We have received your message. Thank you for contacting us!");
+  
+    });
   });
-  $("#dev,#development").click(function () {
-      $(".hide1").toggle();
-      $("#development").toggle();
+  $(document).ready(function(){
+    $("#development-image").click(function(){
+      $("#development-image").slideDown('1500').hide('1000');
+      $("#development").show('1500');
+    });
+    $("#development").click(function(){
+      $("#development").slideUp('1500');
+      $("#development-image").slideDown('1500');
+    });
   });
-  $("#prod,#product").click(function () {
-      $(".hide2").toggle();
-      $("#product").toggle();
+  
+  $(document).ready(function(){
+    $("#design-image").click(function(){
+      $("#design-image").slideDown('1500').hide('1000');
+      $("#design").show('1500');
+    });
+    $("#design").click(function(){
+      $("#design").slideUp('1500');
+      $("#design-image").slideDown('1500');
+    });
   });
-  $("#row1").hover(function () {
-      $(".portfolio1").css({"opacity": "0.2", "transition": "2s"});
-      $("#text1").show();
-
-  }, function () {
-      $(".portfolio1").css("opacity", "1");
-      $("#text1").hide();
+  
+  $(document).ready(function(){
+    $("#product-image").click(function(){
+      $("#product-image").slideDown('1500').hide('1000');
+      $("#product").show('1500');
+    });
+    $("#product").click(function(){
+      $("#product").slideUp('1500');
+      $("#product-image").slideDown('1500');
+    });
   });
-  $("#row2").hover(function () {
-      $(".portfolio2").css({"opacity": "0.2", "transition": "2s"});
-      $("#text2").show();
-
-  }, function () {
-      $(".portfolio2").css("opacity", "1");
-      $("#text2").hide();
+  
+  $(document).ready(function(){
+    $("#work1").mouseover(function(){
+      $("#overlay").show();
+    }).mouseout(function(){
+      $("#overlay").hide();
+    });
   });
-  $("#row3").hover(function () {
-      $(".portfolio3").css({"opacity": "0.2", "transition": "2s"});
-      $("#text3").show();
-
-  }, function () {
-      $(".portfolio3").css("opacity", "1");
-      $("#text3").hide();
+  $(document).ready(function(){
+    $("#work2").mouseover(function(){
+      $("#overlay2").show();
+    }).mouseout(function(){
+      $("#overlay2").hide();
+    });
   });
-  $("#row4").hover(function () {
-      $(".portfolio4").css({"opacity": "0.2", "transition": "2s"});
-      $("#text4").show();
-
-  }, function () {
-      $(".portfolio4").css("opacity", "1");
-      $("#text4").hide();
+  $(document).ready(function(){
+    $("#work3").mouseover(function(){
+      $("#overlay3").show();
+    }).mouseout(function(){
+      $("#overlay3").hide();
+    });
   });
-  $("#row5").hover(function () {
-      $(".portfolio5").css({"opacity": "0.2", "transition": "2s"});
-      $("#text5").show();
-
-  }, function () {
-      $(".portfolio5").css("opacity", "1");
-      $("#text5").hide();
+  $(document).ready(function(){
+    $("#work4").mouseover(function(){
+      $("#overlay4").show();
+    }).mouseout(function(){
+      $("#overlay4").hide();
+    });
   });
-  $("#row6").hover(function () {
-      $(".portfolio6").css({"opacity": "0.2", "transition": "2s"});
-      $("#text6").show();
-
-  }, function () {
-      $(".portfolio6").css("opacity", "1");
-      $("#text6").hide();
+  
+  $(document).ready(function(){
+    $("#work5").mouseover(function(){
+      $("#overlay5").show();
+    }).mouseout(function(){
+      $("#overlay5").hide();
+    });
+    $("#work6").mouseover(function(){
+      $("#overlay6").show();
+    }).mouseout(function(){
+      $("#overlay6").hide();
+    });
+    $("#work7").mouseover(function(){
+      $("#overlay7").show();
+    }).mouseout(function(){
+      $("#overlay7").hide();
+    });
+    $("#work8").mouseover(function(){
+      $("#overlay8").show();
+    }).mouseout(function(){
+      $("#overlay8").hide();
+    });
   });
-  $("#row7").hover(function () {
-      $(".portfolio7").css({"opacity": "0.2", "transition": "2s"});
-      $("#text7").show();
-
-  }, function () {
-      $(".portfolio7").css("opacity", "1");
-      $("#text7").hide();
-  });
-  $("#row8").hover(function () {
-      $(".portfolio8").css({"opacity": "0.2", "transition": "s"});
-      $("#text8").show();
-
-  }, function () {
-      $(".portfolio8").css("opacity", "1");
-      $("#text8").hide();
-  });
-
-});
-var submission = function () {
-  var email = document.getElementById("email")
-  if (email == "") {
-      alert("")
-  } else {
-      alert(' Your message has been received. Thank you for reaching out to us.')
-  }
-}
 
